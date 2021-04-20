@@ -1,3 +1,7 @@
+
+Note - The 3d xcatter plot do not render on Github so please try running on https://nbviewer.jupyter.org/
+
+
 # Market Segmentation in Retail
 
 ## BUSINESS PROBLEM
