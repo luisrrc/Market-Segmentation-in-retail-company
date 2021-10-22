@@ -1,7 +1,7 @@
 ![Python](https://img.shields.io/badge/Python-blue)
 ![Framework](https://img.shields.io/badge/Framework-Tensorflow-orange)
 ![Frontend](https://img.shields.io/badge/Plotly-yellow)
-
+![Frontend](https://img.shields.io/badge/Sklearn-green)
 
 
 Note - for a better visualization of the notebook and the different charts click here: https://deepnote.com/project/Market-Segmentation-2irPBoppSnuxnimiY8kdyQ/%2FMarket_Segmentation.ipynb
