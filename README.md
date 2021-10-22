@@ -82,16 +82,22 @@ K-Means clustering intends to partition n objects into k clusters in which each 
 K-Means algorithm steps:
 
 1- Clusters the data into k groups where k  is predefined.
+
 2- Select k points at random as cluster centers.
+
 3- Assign objects to their closest cluster center according to the Euclidean distance function.
+
 4- Calculate the centroid or mean of all objects in each cluster.
+
 5- Repeat steps 2, 3 and 4 until the same points are assigned to each cluster in consecutive rounds.
 
 source: https://www.saedsayad.com/clustering_kmeans.htm
 
 ## Apply the Elbow Method to find the optimal number of clusters
-**The Elbow Method**  is an empirical method to find out the best value of k. it picks up the range of values and takes the best among them. It calculates the sum of the square of the points and calculates the average distance. When the value of k is 1, the within-cluster sum of the square will be high. As the value of k increases, the within-cluster sum of square value will decrease.
+**The Elbow Method**  is an empirical method to find out the best value of k. It picks up the range of values and takes the best among them. It calculates the sum of the square of the points and calculates the average distance. When the value of k is 1, the within-cluster sum of the square will be high. As the value of k increases, the within-cluster sum of square value will decrease.
 
-Finally, we will plot a graph between k-values and the within-cluster sum of the square to get the k value. we will examine the graph carefully. At some point, our graph will decrease abruptly. That point will be considered as a value of k.
+Finally, we will plot a graph between k-values and the within-cluster sum of the square to get the k value, we will examine the graph carefully. At some point, our graph will decrease abruptly. That point will be considered as a value of k.
 
 ![62725cluster0](https://user-images.githubusercontent.com/58336896/138468660-9cf2c5a6-5be1-41b9-a59a-e9df00fe3de5.png)
+
+source: https://www.analyticsvidhya.com/blog/2021/05/k-mean-getting-the-optimal-number-of-clusters/
