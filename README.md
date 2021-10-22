@@ -11,7 +11,7 @@ Note - for a better visualization of the notebook and the different charts click
 
 ## Business Understanding
 
-A retail company in the US wants to develop a marketing campaign. The company has data on their customers for about almost 3 years, so they need to create a targeted ad marketing campaign by dividing their customers into at least 3 distinctive groups.
+A retail company in the US wants to develop a marketing campaign. The company has data on their customers for about almost 3 years, so they need to create a targeted ad marketing campaign by dividing their customers into at least 3 distinctive groups. This is a unsupervised machine learning case.
 
 ## Data
 
@@ -63,3 +63,19 @@ The Dataframe is made up of the following features:
 
 **CONTACTLASTNAME** = contact person's last name.
 
+## Exploratory Data Analysis and Data Cleaning
+
+1) After examining the "country" column, we can see that most of the customers reside in the Usa, Spain and France.
+2) We drop the column STATUS because its too imbalanced.
+3) A function is created to add dummy variables to replace the values of the categorical variables.
+4) We can see from the line graph, the peaks in sales are reached in the month of November.
+5) A trend exists between 'SALES' and 'QUANTITYORDERED'.
+6) A trend exists between 'MSRP' and 'PRICEEACH'.
+7) A trend exists between 'PRICEEACH' and 'SALES'.
+
+## K-Means Algorithm
+
+K-Means clustering intends to partition n objects into k clusters in which each object belongs to the cluster with the nearest mean. This method produces exactly k different clusters of greatest possible distinction. The best number of clusters k leading to the greatest separation (distance) is not known as a priori and must be computed from the data. The objective of K-Means clustering is to minimize total intra-cluster variance, or, the squared error function: 
+![Clustering_kmeans_c](https://user-images.githubusercontent.com/58336896/138462797-1c66a5a6-a827-4610-a70f-7e871f2ce363.png)
+
+## Apply the Elbow Method to find the optimal number of clusters
