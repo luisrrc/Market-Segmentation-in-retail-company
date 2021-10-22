@@ -101,3 +101,14 @@ Finally, we will plot a graph between k-values and the within-cluster sum of the
 ![62725cluster0](https://user-images.githubusercontent.com/58336896/138468660-9cf2c5a6-5be1-41b9-a59a-e9df00fe3de5.png)
 
 source: https://www.analyticsvidhya.com/blog/2021/05/k-mean-getting-the-optimal-number-of-clusters/
+
+## Applying Principal Component Analysis (PCA)
+
+What is PCA?
+
+PCA is a very effective dimensionality reduction technique that achieves dimensionality reduction without compromising on the information content of the data. The basic idea behind PCA is to first identify correlations among different variables within the dataset. Once correlations are identified, the algorithm decides to eliminate the variables in such a way that the variability of the data is maintained. In other words, PCA aims to find uncorrelated sources of data.
+
+## Autoencoder
+
+![Autoencoders-graph](https://user-images.githubusercontent.com/58336896/138476513-ad704545-fbe2-4ffb-9f8b-09140cbbcba2.png)
+source: https://neptune.ai/blog/autoencoders-case-study-guide
