@@ -82,6 +82,14 @@ The Dataframe is made up of the following features:
 6) A trend exists between 'MSRP' and 'PRICEEACH'.
 7) A trend exists between 'PRICEEACH' and 'SALES'.
 
+## Autoencoder
+Autoencoders is a type of artificial neural network that is used for the purpose of encoding data (representation learning), using the same data as input and output. This neural network works by adding a bottleneck (code layer)  which ends up forcing the network to generate a new compressed (encoded) version of the input data. Auto encoders work well if there are correlations in the input data.
+
+![Autoencoders-graph](https://user-images.githubusercontent.com/58336896/138476513-ad704545-fbe2-4ffb-9f8b-09140cbbcba2.png)
+
+source: https://neptune.ai/blog/autoencoders-case-study-guide
+
+I apply autoencoders with tensorflow to the data to generate a new compress version of the data and then use kmeans and pca to achieve the objectives.
 
 ## Apply the Elbow Method to find the optimal number of clusters
 **The Elbow Method**  is an empirical method to find out the best value of k. It picks up the range of values and takes the best among them. It calculates the sum of the square of the points and calculates the average distance. When the value of k is 1, the within-cluster sum of the square will be high. As the value of k increases, the within-cluster sum of square value will decrease.
@@ -133,7 +141,12 @@ After apply PCA for dimensionality reduction, we can visualize the clusters usin
 
 ![xcatter plot](https://user-images.githubusercontent.com/58336896/138718702-147aa3e7-5a59-4fa4-a4c5-68ed70c7fc5d.png)
 
-## Autoencoder
+# Conclusion
 
-![Autoencoders-graph](https://user-images.githubusercontent.com/58336896/138476513-ad704545-fbe2-4ffb-9f8b-09140cbbcba2.png)
-source: https://neptune.ai/blog/autoencoders-case-study-guide
+After implementing the analysis and running a predictive model to help us segment customers into at least 3 distinctive groups, these are the results:
+
+Cluster 1 - This group represents customers who buy items in small quantity(30) and they tend to buy low price items (69). They correspond to the lowest total sale(2055) . Also they then to buy products with low MSRP(76).
+
+Cluster 2 - This group represents customers who buy items in high quantity(38), they buy tend to buy high price items(95). They bring-in average sales(4398). Also they prefer to buy products with high MSRP(115) .
+
+Cluster 3 - This group represents customers who buy items in high quantity(47), they usually buy items with high prices(100). They bring-in more sales than other clusters(8293) and they are active all around the year. They are mostly active through out the year. They buy products with high mrsp(158).
