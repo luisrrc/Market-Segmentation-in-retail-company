@@ -145,7 +145,7 @@ After apply PCA for dimensionality reduction, we can visualize the clusters usin
 
 After implementing the analysis and running a predictive model to help us segment customers into at least 3 distinctive groups, these are the results:
 
-Cluster 1 - This group represents customers who buy items in small quantity(30) and they tend to buy low price items (69). They correspond to the lowest total sale(2055) . Also they then to buy products with low MSRP(76).
+Cluster 1 - This group represents customers who buy items in small quantity(30) and they tend to buy low price items (69). They correspond to the lowest total sale(2061) . Also they then to buy products with low MSRP(76).
 
 Cluster 2 - This group represents customers who buy items in high quantity(38), they buy tend to buy high price items(95). They bring-in average sales(4398). Also they prefer to buy products with high MSRP(115) .
 
