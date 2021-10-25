@@ -4,7 +4,15 @@
 ![Frontend](https://img.shields.io/badge/Sklearn-green)
 
 
-Note - for a better visualization of the notebook and the different charts click here: https://deepnote.com/project/Market-Segmentation-2irPBoppSnuxnimiY8kdyQ/%2FMarket_Segmentation.ipynb
+**Note** - for a better visualization of the notebook and the different charts click here: https://deepnote.com/project/Market-Segmentation-2irPBoppSnuxnimiY8kdyQ/%2FMarket_Segmentation.ipynb
+
+Market Segmentation Analysis
+    ├── Importing Libraries and Dataset
+    ├── Data Cleaning & EDA
+    ├── Applying Elbow Method
+    ├── Autoencoder
+    ├── k-Means algorithm
+    └── PCA
 
 
 # Market Segmentation in Retail
@@ -73,6 +81,20 @@ The Dataframe is made up of the following features:
 6) A trend exists between 'MSRP' and 'PRICEEACH'.
 7) A trend exists between 'PRICEEACH' and 'SALES'.
 
+
+## Apply the Elbow Method to find the optimal number of clusters
+**The Elbow Method**  is an empirical method to find out the best value of k. It picks up the range of values and takes the best among them. It calculates the sum of the square of the points and calculates the average distance. When the value of k is 1, the within-cluster sum of the square will be high. As the value of k increases, the within-cluster sum of square value will decrease.
+
+Finally, we will plot a graph between k-values and the within-cluster sum of the square to get the k value, we will examine the graph carefully. At some point, our graph will decrease abruptly. That point will be considered as a value of k.
+
+![62725cluster0](https://user-images.githubusercontent.com/58336896/138468660-9cf2c5a6-5be1-41b9-a59a-e9df00fe3de5.png)
+
+After apply the elbow method, the value of K is: 3
+
+![elbow method](https://user-images.githubusercontent.com/58336896/138717417-153db571-a746-4f8c-9ddb-301b59d8d0f0.png)
+
+source: https://www.analyticsvidhya.com/blog/2021/05/k-mean-getting-the-optimal-number-of-clusters/
+
 ## K-Means Algorithm
 
 K-Means clustering intends to partition n objects into k clusters in which each object belongs to the cluster with the nearest mean. This method produces exactly k different clusters of greatest possible distinction. The best number of clusters k leading to the greatest separation (distance) is not known as a priori and must be computed from the data. The objective of K-Means clustering is to minimize total intra-cluster variance, or, the squared error function: 
@@ -93,14 +115,12 @@ K-Means algorithm steps:
 
 source: https://www.saedsayad.com/clustering_kmeans.htm
 
-## Apply the Elbow Method to find the optimal number of clusters
-**The Elbow Method**  is an empirical method to find out the best value of k. It picks up the range of values and takes the best among them. It calculates the sum of the square of the points and calculates the average distance. When the value of k is 1, the within-cluster sum of the square will be high. As the value of k increases, the within-cluster sum of square value will decrease.
+After apply the k-means algorithm to the data using the value of k = 3, these are the results:
 
-Finally, we will plot a graph between k-values and the within-cluster sum of the square to get the k value, we will examine the graph carefully. At some point, our graph will decrease abruptly. That point will be considered as a value of k.
+![clusters](https://user-images.githubusercontent.com/58336896/138717659-25b90d86-6570-49e8-ac73-7bbbfa7e96f8.png)
 
-![62725cluster0](https://user-images.githubusercontent.com/58336896/138468660-9cf2c5a6-5be1-41b9-a59a-e9df00fe3de5.png)
 
-source: https://www.analyticsvidhya.com/blog/2021/05/k-mean-getting-the-optimal-number-of-clusters/
+
 
 ## Applying Principal Component Analysis (PCA)
 
