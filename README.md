@@ -6,7 +6,8 @@
 
 **Note** - for a better visualization of the notebook and the different charts click here: https://deepnote.com/project/Market-Segmentation-2irPBoppSnuxnimiY8kdyQ/%2FMarket_Segmentation.ipynb
 
-Market Segmentation Analysis
+.
+└── Market Segmentation Analysis
     ├── Importing Libraries and Dataset
     ├── Data Cleaning & EDA
     ├── Applying Elbow Method
@@ -127,6 +128,10 @@ After apply the k-means algorithm to the data using the value of k = 3, these ar
 What is PCA?
 
 PCA is a very effective dimensionality reduction technique that achieves dimensionality reduction without compromising on the information content of the data. The basic idea behind PCA is to first identify correlations among different variables within the dataset. Once correlations are identified, the algorithm decides to eliminate the variables in such a way that the variability of the data is maintained. In other words, PCA aims to find uncorrelated sources of data.
+
+After apply PCA for dimensionality reduction, we can visualize the clusters using a 3-D Scatter plot:
+
+![xcatter plot](https://user-images.githubusercontent.com/58336896/138718702-147aa3e7-5a59-4fa4-a4c5-68ed70c7fc5d.png)
 
 ## Autoencoder
 
