@@ -6,7 +6,7 @@
 
 **Note** - for a better visualization of the notebook and the different charts click here: https://deepnote.com/project/Market-Segmentation-2irPBoppSnuxnimiY8kdyQ/%2FMarket_Segmentation.ipynb
 
-.
+```
 └── Market Segmentation Analysis
     ├── Importing Libraries and Dataset
     ├── Data Cleaning & EDA
@@ -14,7 +14,7 @@
     ├── Autoencoder
     ├── k-Means algorithm
     └── PCA
-
+```
 
 # Market Segmentation in Retail
 
